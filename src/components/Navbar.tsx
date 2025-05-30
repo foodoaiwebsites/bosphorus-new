@@ -55,8 +55,8 @@ const Navbar = ({
           <div
             className={
               pathname === "/"
-                ? "flex flex-col items-start gap-14"
-                : "mt-2 flex flex-row items-center justify-center gap-14"
+                ? "flex flex-col items-start gap-14 z-50"
+                : "mt-2 flex flex-row items-center justify-center gap-14 z-50"
             }
           >
             <Link
@@ -98,7 +98,7 @@ const Navbar = ({
               />{" "}
               About
             </Link> */}
-            <Link
+            {/* <Link
               href={""}
               className="flex flex-row items-center justify-center gap-1 font-open_sans text-base font-[400] uppercase leading-[25px] tracking-[1.6px] text-white"
             >
@@ -110,7 +110,7 @@ const Navbar = ({
                 className="h-5 w-2"
               />{" "}
               Food & Drinks
-            </Link>
+            </Link> */}
             <Link
               href={"/table-booking"}
               className="flex flex-row items-center justify-center gap-1 font-open_sans text-base font-[400] uppercase leading-[25px] tracking-[1.6px] text-white"

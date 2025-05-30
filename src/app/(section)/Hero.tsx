@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
         </Link>
       </div>
 
-      <div className="relative z-50 flex h-full flex-col items-center justify-center gap-3 text-white md:ml-16">
+      <div className="relative z-40 flex h-full flex-col items-center justify-center gap-3 text-white md:ml-16">
         <div>
           <h1
             className="text-center font-open_sans text-4xl font-light leading-none uppercase md:text-[90px] md:tracking-[20px]"
