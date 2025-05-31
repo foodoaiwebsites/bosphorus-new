@@ -81,7 +81,7 @@ const Hero: React.FC = () => {
             BOSPHORUS
           </h1>
         </div>
-        <div className="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:gap-3">
+        <div className="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:gap-3 z-50">
           <Link href="/table-booking" className="relative z-50 hidden md:block">
             <Button className="font-open_sans z-50 mt-[50px] rounded-none px-7 py-6 tracking-[2px] text-white">
               Reserve Table
