@@ -67,6 +67,17 @@ const Hero: React.FC = () => {
           <Image src="/images/logo.png" width={152} height={83} alt="" />
         </Link>
       </div>
+      <div className="absolute z-50 hidden h-[150px] w-fit items-center justify-center right-5 top-2 md:flex">
+           <Link href={"/menu"}>
+          {/* <Button
+            className="relative z-40 mt-4 flex items-center justify-center gap-3 px-6 py-7 uppercase"
+            variant="imageoutline"
+          >
+            Book Now
+          </Button> */}
+          <Button className="rounded-none py-5 px-5">Order Online</Button>
+        </Link>
+      </div>
 
       <div className="relative z-40 flex h-full flex-col items-center justify-center gap-3 text-white md:ml-16">
         <div>

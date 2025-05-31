@@ -33,7 +33,7 @@ const Navbar = ({
     <nav
       className={cn(
         `${position} top-5 z-50 h-[10vh] w-full pt-0 md:top-0`,
-        pathname === "/menu" && "bg-menubackground pt-4",
+        pathname === "/menu" && "bg-black pt-4",
         pathname !== "/" && `${position} top-5 z-50 h-[10vh] w-full pt-4`,
       )}
     >
