@@ -185,6 +185,7 @@ const Contact = ({ }) => {
                     <br />
                     United Kingdom
                   </Link>
+                  <Link href="mailto:bosphorusistanbulrestaurant@gmail.com">bosphorusistanbulrestaurant@gmail.com</Link>
                   <Button
                     variant="link"
                     className="flex gap-2 text-sm text-[#b3b3aa] hover:bg-transparent"

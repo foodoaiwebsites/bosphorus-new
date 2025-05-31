@@ -50,6 +50,7 @@ const Footer = ({}) => {
               Coventry CV5 6EP, UK
               <br />
             </Link>
+             <Link href="mailto:bosphorusistanbulrestaurant@gmail.com">bosphorusistanbulrestaurant@gmail.com</Link>
             <Link href="tel:+442477350145">Booking Request: +442477350145</Link>
           </div>
           {/* <Image src="/images/halal.png" width={90} height={90} alt="halal" /> */}
