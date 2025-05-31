@@ -10,6 +10,7 @@ import {
 import { useRestaurant } from "@/context/RestaurantContext";
 import Image from "next/image";
 import Link from "next/link";
+import { array } from "zod";
 
 const Reviews = ({}) => {
   const { reviews } = useRestaurant();
@@ -47,7 +48,7 @@ const Reviews = ({}) => {
           {reviews && (
             <Carousel className="w-full md:w-[600px] px-4">
               <CarouselContent className="flex w-full justify-center gap-4 md:ml-4">
-                {reviews.map((review, index) => (
+                {reviews.filter((review) => review.rating >= 4).map((review, index) => (
                   // <CarouselItem
                   //   key={index}
                   //   className="flex w-full basis-full flex-col items-center justify-center gap-6 rounded-none md:basis-1/4"
@@ -73,6 +74,16 @@ const Reviews = ({}) => {
                         <p className="font-poppins line-clamp-6 text-center text-sm font-[500] lowercase text-[#817263] md:px-4 lg:leading-[24px] tracking-[1px]">
                           {review.text.text}
                         </p>
+                              <div className="mt-8 flex w-full justify-center">
+                          {Array.from({ length: review.rating }).map(
+                            (_, index) => (
+                              <Icons.star
+                                key={index}
+                                className="text-[#CDAE64]"
+                              />
+                            ),
+                          )}
+                        </div>
                         <div className="w-full flex flex-col justify-center items-center gap-1">
                         <Image
                         src={
@@ -95,7 +106,7 @@ const Reviews = ({}) => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <div className="group absolute -bottom-12 left-1/2 flex w-fit -translate-x-1/2 transform items-center gap-2 transition-transform duration-300 ease-in-out">
+              <div className="w-full flex justify-center items-center gap-4">
                 <CarouselPrevious className="border-[#D3A641] bg-[#D3A641] transition-transform duration-300 ease-in-out group-hover:-translate-x-2" />
                 <CarouselNext className="border-[#D3A641] bg-[#D3A641] transition-transform duration-300 ease-in-out group-hover:translate-x-2" />
               </div>

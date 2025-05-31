@@ -5,9 +5,7 @@ import { NextResponse } from "next/server";
 export const dynamic = "force-dynamic"; // defaults to auto
 
 interface PlaceDetailsResponse {
-  result: {
-    reviews: Review[];
-  };
+  reviews: Review[];
   status: string;
 }
 
@@ -23,18 +21,17 @@ export async function GET() {
 
   try {
     const apiKey = process.env.GOOGLE_PLACES_API_KEY;
-    const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=reviews&key=${apiKey}`;
-
+    const url = `https://places.googleapis.com/v1/places/${placeId}?fields=reviews&key=${apiKey}`;
     const response: AxiosResponse<PlaceDetailsResponse> = await axios.get(url);
 
-    if (response.data.status !== "OK") {
-      return NextResponse.json(
-        { error: "Failed to fetch reviews", details: response.data },
-        { status: 400 },
-      );
-    }
+    // if (response.data.status !== "OK") {
+    //   return NextResponse.json(
+    //     { error: "Failed to fetch reviews", details: response.data },
+    //     { status: 400 },
+    //   );
+    // }
 
-    const reviews = response.data.result.reviews || [];
+    const reviews = response.data.reviews || [];
     return NextResponse.json(reviews, { status: 200 });
   } catch (error) {
     return NextResponse.json(

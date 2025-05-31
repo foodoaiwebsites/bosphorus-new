@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { Icons } from "./Icon";
 
 const Footer = ({ }) => {
   return (
@@ -94,6 +95,44 @@ const Footer = ({ }) => {
           <p className="text-[##959595]"> Sunday 11:00am - 10:00pm</p>
         </div>
       </div>
+      <div className="w-full flex justify-center items-center gap-3">
+                        <Button
+                          className="px-1 py-1 text-white hover:bg-transparent hover:text-white"
+                          variant="ghost"
+                          asChild
+                        >
+                          <Link href="https://www.instagram.com/bosphorusistanbulrestaurant/" target="_blank">
+                            <Icons.instagram />
+                          </Link>
+                        </Button>
+                        <Button
+                          className="px-1 py-1 text-white hover:bg-transparent hover:text-white"
+                          variant="ghost"
+                          asChild
+                        >
+                          <Link href="https://g.co/kgs/GqRfnC2" target="_blank">
+                            <Icons.google />
+                          </Link>
+                        </Button>
+                        <Button
+                          className="px-1 py-1 text-white hover:bg-transparent hover:text-white"
+                          variant="ghost"
+                          asChild
+                        >
+                          <Link href="https://www.tripadvisor.in/Restaurant_Review-g186403-d26516717-Reviews-Bosphorus_Istanbul-Coventry_West_Midlands_England.html" target="_blank">
+                            <Icons.unknown />
+                          </Link>
+                        </Button>
+                        <Button
+                          className="px-1 py-1 text-white hover:bg-transparent hover:text-white"
+                          variant="ghost"
+                          asChild
+                        >
+                          <Link href="https://www.facebook.com/bosphorusistanbulrestaurant/" target="_blank">
+                            <Icons.facebook />
+                          </Link>
+                        </Button>
+                      </div>
       <div className="flex w-full items-center justify-center">
         <p className="w-fit px-4 text-center text-xl">
           © 2024 Bosphorus Istanbul Restaurent. All Rights Reserved |{" "}
