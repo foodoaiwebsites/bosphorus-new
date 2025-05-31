@@ -83,12 +83,12 @@ const Hero: React.FC = () => {
         </div>
         <div className="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:gap-3">
           <Link href="/table-booking" className="relative z-50 hidden md:block">
-            <Button className="font-open_sans z-50 mt-[50px] rounded-none bg-white px-7 py-6 tracking-[2px] text-black">
+            <Button className="font-open_sans z-50 mt-[50px] rounded-none px-7 py-6 tracking-[2px] text-white">
               Reserve Table
             </Button>
           </Link>
           <Link href="/menu" className="relative z-50">
-            <Button className="font-open_sans z-50 mt-[50px] rounded-none bg-white px-7 py-6 tracking-[2px] text-black">
+            <Button className="font-open_sans z-50 mt-[50px] rounded-none px-7 py-6 tracking-[2px] text-white">
               Order Online
             </Button>
           </Link>
