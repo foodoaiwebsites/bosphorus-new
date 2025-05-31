@@ -71,20 +71,28 @@ const Hero: React.FC = () => {
       <div className="relative z-40 flex h-full flex-col items-center justify-center gap-3 text-white md:ml-16">
         <div>
           <h1
-            className="text-center font-open_sans text-4xl font-light leading-none uppercase md:text-[90px] md:tracking-[20px]"
+            className="font-open_sans text-center text-4xl font-light uppercase leading-none md:text-[90px] md:tracking-[20px]"
             style={{
               background: "linear-gradient(180deg, #FFF 0%, #191717 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
             }}
           >
-          BOSPHORUS
+            BOSPHORUS
           </h1>
         </div>
-        <Link href='/table-booking' className="relative z-50">
-        <Button className="bg-white rounded-none px-7 py-6 text-black mt-[50px] font-open_sans tracking-[2px] z-50">Reserve Table</Button>
-         <Button className="bg-white rounded-none px-7 py-6 text-black mt-[50px] font-open_sans tracking-[2px] z-50">Order Online</Button>
-        </Link>
+        <div className="flex w-full flex-col items-center justify-center gap-1 md:flex-row md:gap-3">
+          <Link href="/table-booking" className="relative z-50 hidden md:block">
+            <Button className="font-open_sans z-50 mt-[50px] rounded-none bg-white px-7 py-6 tracking-[2px] text-black">
+              Reserve Table
+            </Button>
+          </Link>
+          <Link href="/menu" className="relative z-50">
+            <Button className="font-open_sans z-50 mt-[50px] rounded-none bg-white px-7 py-6 tracking-[2px] text-black">
+              Order Online
+            </Button>
+          </Link>
+        </div>
       </div>
     </section>
   );
