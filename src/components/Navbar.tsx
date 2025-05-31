@@ -45,6 +45,7 @@ const Navbar = ({
             : "px-4 pt-0 md:px-[50px] 2xl:px-[140px]"
         }
       >
+        <div className="w-full h-screen flex items-center justify-start">
         <div
           className={
             pathname === "/"
@@ -138,6 +139,19 @@ const Navbar = ({
               Contact Us
             </Link>
           </div>
+        </div>
+         <div className="hidden md:flex w-[57%] flex-col items-center justify-center gap-1 md:flex-row md:gap-3 z-50 mt-[130px]">
+          <Link href="/table-booking" className="relative z-50 hidden md:block">
+            <Button className="font-open_sans z-50 mt-[50px] rounded-none px-7 py-6 tracking-[2px] text-white hover:text-black">
+              Reserve Table
+            </Button>
+          </Link>
+          <Link href="/menu" className="relative z-50">
+            <Button className="font-open_sans z-50 mt-[50px] rounded-none px-7 py-6 tracking-[2px] text-white hover:text-black">
+              Order Online
+            </Button>
+          </Link>
+        </div>
         </div>
       </div>
 
