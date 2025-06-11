@@ -26,31 +26,31 @@ const Sidebar: FC<SidebarProps> = ({ children }) => {
           <SheetDescription className="flex w-full flex-col items-start justify-start gap-7 pt-14">
             <Link
               href="/"
-              className="font-playfair flex w-full justify-center p-0 text-4xl font-normal text-accent text-white"
+              className="font-playfair flex w-full justify-center p-0 text-3xl font-normal text-accent text-white"
             >
               Home
             </Link>
             <Link
               href="/menu"
-              className="font-playfair flex w-full justify-center p-0 text-4xl font-normal text-accent text-white"
+              className="font-playfair flex w-full justify-center p-0 text-3xl font-normal text-accent text-white"
             >
               Menu
             </Link>
             <Link
               href="/about-us"
-              className="font-playfair flex w-full justify-center p-0 text-4xl font-normal text-accent text-white"
+              className="font-playfair flex w-full justify-center p-0 text-3xl font-normal text-accent text-white"
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="font-playfair flex w-full justify-center p-0 text-4xl font-normal text-accent text-white"
+              className="font-playfair flex w-full justify-center p-0 text-3xl font-normal text-accent text-white"
             >
               Contact
             </Link>
             <Link
               href="/table-booking"
-              className="font-playfair flex w-full justify-center p-0 text-4xl font-normal text-accent text-white"
+              className="font-playfair flex w-full justify-center p-0 text-3xl font-normal text-accent text-white"
             >
               Table Booking
             </Link>
