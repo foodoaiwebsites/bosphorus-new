@@ -52,10 +52,13 @@ const Hero: React.FC = () => {
         playsInline
         className="absolute left-0 top-0 h-full w-full object-cover"
       >
-        <source src="/video/hero-bg.mp4" type="video/mp4" />
+        <source
+          src="https://d8q1b3smcycac.cloudfront.net/bosphorous/bosphorous-web.mp4"
+          type="video/mp4"
+        />
         Your browser does not support the video tag.
       </video>
-
+      <div className="absolute inset-0 z-0 bg-black/50" />
       <div className="absolute z-20 hidden h-[150px] w-full items-center justify-center md:flex">
         <Link href={"/"}>
           {/* <Button
@@ -81,7 +84,7 @@ const Hero: React.FC = () => {
             BOSPHORUS
           </h1>
         </div>
-        <div className="flex md:hidden w-full flex-col items-center justify-center gap-1 md:flex-row md:gap-3 z-50">
+        <div className="z-50 flex w-full flex-col items-center justify-center gap-1 md:hidden md:flex-row md:gap-3">
           <Link href="/table-booking" className="relative z-50 hidden md:block">
             <Button className="font-open_sans z-50 mt-[50px] rounded-none px-7 py-6 tracking-[2px] text-white hover:text-black">
               Reserve Table
