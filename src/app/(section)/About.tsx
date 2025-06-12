@@ -195,7 +195,7 @@ const About = ({}) => {
             </div>
           </div>
           <div className="flex w-full flex-col items-center justify-center lg:w-1/2">
-            <div className="flex flex-col items-center gap-5">
+            <div className="flex flex-col items-center gap-6">
               <p className="welcome-two w-full text-center capitalize text-[#A27C26] md:-ml-[50px] md:w-[730px]">
                 At Bosphorus, you`ll always be greeted with genuine Turkish
                 hospitality from our friendly and attentive team. Our staff
