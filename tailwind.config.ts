@@ -12,6 +12,7 @@ export default {
         roboto: ["var(--font-roboto)", ...fontFamily.sans],
         caramel: ["var(--font-caramel)", ...fontFamily.sans],
         manrope: ["var(--font-manrope)", ...fontFamily.sans],
+        playfair: ["var(--font-playfair)", ...fontFamily.sans],
       },
       borderRadius: {
         lg: "var(--radius)",

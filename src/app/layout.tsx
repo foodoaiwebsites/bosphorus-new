@@ -3,7 +3,7 @@ import "@/styles/ham.css";
 
 import { cn } from "@/lib/utils";
 import { type Metadata } from "next";
-import { Inter, Roboto, Manrope, Caramel } from "next/font/google";
+import { Inter, Roboto, Manrope, Caramel, Playfair } from "next/font/google";
 import Providers from "@/app/Providers";
 
 export const metadata: Metadata = {
@@ -30,6 +30,11 @@ const manrope = Manrope({
   variable: "--font-manrope",
   weight: ["200", "300", "400", "500", "600", "700", "800"],
 });
+const playfair = Playfair({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  weight: ["300", "400", "500", "600", "700", "800"],
+});
 
 const caramel = Caramel({
   subsets: ["latin"],
@@ -46,11 +51,12 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "theme-custom flex min-h-screen bg-[#070707] text-[#FBEAD2] bg-background font-sans antialiased",
+          "theme-custom flex min-h-screen bg-[#070707] bg-background font-sans text-[#FBEAD2] antialiased",
           inter.variable,
           roboto.variable,
           caramel.variable,
           manrope.variable,
+          playfair.variable,
         )}
       >
         <Providers>{children}</Providers>
