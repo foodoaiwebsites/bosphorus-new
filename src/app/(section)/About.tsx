@@ -207,7 +207,7 @@ const About = ({}) => {
           <div className="grid w-full max-w-[1200px] grid-cols-1 items-center justify-center gap-9 md:grid-cols-3 md:justify-between">
             <div className="m-auto flex w-[90%] items-center justify-center md:m-0 md:w-full">
               <Image
-                src="/images/home/food2.jpeg"
+                src="/images/home/story/1.jpg"
                 alt="image1"
                 width={5000}
                 height={2782}
@@ -219,7 +219,7 @@ const About = ({}) => {
             </div>
             <div className="m-auto flex w-[90%] items-center justify-center md:m-0 md:w-full">
               <Image
-                src="/images/home/drinks2.jpeg"
+                src="/images/home/story/3.jpg"
                 alt="image2"
                 width={5000}
                 height={2782}
@@ -228,7 +228,7 @@ const About = ({}) => {
             </div>
             <div className="m-auto flex w-[90%] items-center justify-center md:m-0 md:w-full">
               <Image
-                src="/images/home/hero.png"
+                src="/images/home/story/5.jpg"
                 alt="image3"
                 width={5000}
                 height={2782}
