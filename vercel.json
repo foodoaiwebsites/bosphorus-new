@@ -1,0 +1,4 @@
+{
+  "installCommand": "sh ./init-submodule.sh  && pnpm install"
+}
+  

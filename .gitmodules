@@ -1,0 +1,3 @@
+[submodule "src/submodule/table-ordering"]
+	path = src/submodule/table-ordering
+	url = git@github.com:foodoaiwebsites/shared-table-order-component.git
