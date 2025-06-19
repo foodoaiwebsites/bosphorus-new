@@ -1,7 +1,8 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Hero from "@/submodule/table-ordering/components/Hero";
-import TableBooking from "./(section)/TableBooking";
+import TableBooking from "@/submodule/table-ordering/components/TableBooking";
+
 
 export default function HomePage() {
   return (
